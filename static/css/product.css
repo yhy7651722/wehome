@@ -1,0 +1,296 @@
+body {
+    margin: 0;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* 广告图开始 */
+
+section {
+    max-width: 100%;
+    /* height: 270px; */
+    background-image: url(../img/product/banner-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 100%;
+    margin-bottom: 20px;
+}
+
+section>.zhegai {
+    max-width: 100%;
+    height: 270px;
+    background-color: #000;
+    opacity: 0.2;
+}
+
+
+/* 广告图结束 */
+
+
+/* 主体内容开始 */
+
+.container>.row>.xiangqing {
+    margin-top: 40px;
+}
+
+.container>.row>.xiangqing>.title {
+    margin-bottom: 30px;
+}
+
+.container>.row>.xiangqing>.title>h1 {
+    font-size: 32px;
+    color: #000;
+    text-align: center;
+}
+
+
+/* 商品banner开始 */
+
+.container>.row>.xiangqing>.zhanshi {
+    width: 984px;
+    height: 325px;
+    margin: 0 auto;
+}
+
+.container>.row>.xiangqing>.zhanshi>.banner-container {
+    width: 492px;
+    height: 325px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.container>.row>.xiangqing>.zhanshi>.banner-container>.banner {
+    position: relative;
+    width: 300px;
+    height: 325px;
+    margin-left: 96px;
+}
+
+.container>.row>.xiangqing>.zhanshi>.banner-container>.banner>ul>.img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    opacity: 1;
+    transition: opacity 1.5s;
+}
+
+.container>.row>.xiangqing>.zhanshi>.banner-container>.banner>ul>.img>img {
+    width: 300px;
+}
+
+.container>.row>.xiangqing>.zhanshi>.banner-container>.banner>.btn {
+    position: absolute;
+    top: 135px;
+    z-index: 100;
+    width: 30px;
+    height: 30px;
+}
+
+.container>.row>.xiangqing>.zhanshi>.banner-container>.banner>.btn.left {
+    background-image: url(../img/product/download.png);
+    background-repeat: no-repeat;
+}
+
+.container>.row>.xiangqing>.zhanshi>.banner-container>.banner>.btn.right {
+    background-image: url(../img/product/download.png);
+    background-position-x: -30px;
+    background-repeat: no-repeat;
+    right: 0;
+}
+
+.container>.row>.xiangqing>.zhanshi>.banner-container>.banner>.banner-dot {
+    position: absolute;
+    top: 300px;
+    width: 300px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    z-index: 50;
+    margin-top: 15px;
+}
+
+.container>.row>.xiangqing>.zhanshi>.banner-container>.banner>.banner-dot>.dot {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+/* 商品banner结束 */
+
+
+/* 商品价格开始 */
+
+.container>.row>.xiangqing>.zhanshi>.money {
+    width: 492px;
+    margin-top: 60px;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container>.row>.xiangqing>.zhanshi>.money>.MarketPrice {
+    margin-bottom: 24px;
+}
+
+.container>.row>.xiangqing>.zhanshi>.money>.MarketPrice>span {
+    font-size: 14px;
+    color: #808080;
+}
+
+.container>.row>.xiangqing>.zhanshi>.money>.RetailPrice {
+    margin-bottom: 27px;
+}
+
+.container>.row>.xiangqing>.zhanshi>.money>.RetailPrice>span:nth-child(1) {
+    font-size: 14px;
+    color: #808080;
+}
+
+.container>.row>.xiangqing>.zhanshi>.money>.RetailPrice>span:nth-child(2) {
+    font-size: 26px;
+    color: #e40000;
+}
+
+.container>.row>.xiangqing>.zhanshi>.money>hr {
+    border-width: 1px 0px 0px;
+    border-style: dashed;
+    border-color: rgb(194, 194, 194);
+}
+
+.container>.row>.xiangqing>.zhanshi>.money>.stock {
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+
+.container>.row>.xiangqing>.zhanshi>.money>.stock>span {
+    font-size: 14px;
+    color: #808080;
+}
+
+
+/* 商品价格结束 */
+
+
+/* 商品介绍开始 */
+
+.container>.row>.xiangqing>.jieshao {
+    width: 984px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container>.row>.xiangqing>.jieshao>.shop-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.container>.row>.xiangqing>.jieshao>.shop-title>span {
+    font-size: 22px;
+    color: #3e3e3e;
+}
+
+.container>.row>.xiangqing>.jieshao>.shop-xiangqing>p {
+    font-size: 16px;
+    color: #808080;
+}
+
+.container>.row>.xiangqing>.jieshao>.shop-xiangqing2>p {
+    font-size: 16px;
+    color: #808080;
+}
+
+.container>.row>.xiangqing>.jieshao>.shop-xiangqing2 {
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+
+/* 商品介绍结束 */
+
+
+/* 主体内容结束 */
+
+
+/* 响应式 */
+
+@media screen and (max-width:992px) {
+    .container>.row>.xiangqing>.zhanshi {
+        width: 768px;
+    }
+    .container>.row>.xiangqing>.zhanshi>.banner-container {
+        width: 768px;
+        clear: both;
+    }
+    .container>.row>.xiangqing>.zhanshi>.banner-container>.banner {
+        margin: 0 auto;
+    }
+    .container>.row>.xiangqing>.zhanshi>.money {
+        width: 768px;
+        clear: both;
+    }
+    .container>.row>.xiangqing>.jieshao {
+        width: 768px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    section>.zhegai {
+        height: 149px;
+    }
+    .container>.row>.xiangqing>.title>h1 {
+        font-size: 20px;
+    }
+    .container>.row>.xiangqing>.zhanshi {
+        width: 100%;
+        height: 100%;
+    }
+    .container>.row>.xiangqing>.zhanshi>.banner-container {
+        width: 100%;
+        height: 100%;
+        clear: both;
+    }
+    .container>.row>.xiangqing>.zhanshi>.banner-container>.banner {
+        margin: 0 auto;
+    }
+    .container>.row>.xiangqing>.zhanshi>.banner-container>.banner>ul>.img {
+        width: 100%;
+    }
+    .container>.row>.xiangqing>.zhanshi>.banner-container>.banner>ul>.img>img {
+        width: 100%;
+    }
+    .container>.row>.xiangqing>.zhanshi>.banner-container>.banner>.btn {
+        top: calc(50% - 15px);
+    }
+    .container>.row>.xiangqing>.zhanshi>.banner-container>.banner>.banner-dot {
+        bottom: 0;
+        width: 100%;
+    }
+    .container>.row>.xiangqing>.zhanshi>.banner-container>.banner>.banner-dot>.dot {
+        width: 10px;
+        height: 10px;
+    }
+    .container>.row>.xiangqing>.zhanshi>.money {
+        width: 100%;
+        clear: both;
+    }
+    .container>.row>.xiangqing>.jieshao {
+        width: 100%;
+    }
+}

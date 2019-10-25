@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1351160_ne6jrxlcrwa.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1351160_n13lb1rmev.css">
+    <link rel="stylesheet" href="../static/css/animate.css">
+    <link rel="stylesheet" href="../static/css/xwzx.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/com(2).css">
+    <link rel="stylesheet" href="../static/css/news.css">
+    <style>
+        .news-every:hover {
+            color: red;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+
+        .news-every:hover a {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- 、、、、、、、、、、、、、、、、、、 -->
+<div class="container">
+    <div class="row">
+        <!-- banner开始 -->
+        <div class="banner-img">
+            <img src="../static/img/news/banner.jpg" alt="">
+        </div>
+        <!-- banner结束 -->
+        <!-- 分割线开始 -->
+        <div class="aboutus">
+            <div class='line'></div>
+            <div class="guanyu">
+                <div class="zhongwen"><?php echo $nav['nname']?></div>
+                <div class="yingwen"><?php echo $nav['ename']?></div>
+            </div>
+            <div class="line"></div>
+        </div>
+        <!-- 分割线结束 -->
+        <!-- 新闻开始 -->
+
+        <?php
+            $sql="select * from new";
+            $data=$mysql->query($sql)->fetch_all(MYSQLI_ASSOC);
+        foreach($data as $v){?>
+        <div class="newsall">
+            <div class="news-every">
+                <a class="detail" href="xwzx.php?id=<?php echo $v['id']?>"><?php echo $v['nname'];?></a>
+                <span><?php echo substr($v['ntext'],0,10);?></span>
+            </div>
+
+        <?php }?>
+        <!-- 底部图片开始 -->
+
+        <!-- 底部图片结束 -->
+    </div>
+</div>
+
+
+
+</div>
+<div class="container bottom">
+    <div class="banner-img">
+        <img src="../static/img/news/banner1.jpg">
+    </div>
+</div>
+</body>
+
+</html>
+<script src="../static/js/com.js"></script>

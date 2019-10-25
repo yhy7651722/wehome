@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1351160_ne6jrxlcrwa.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1351160_n13lb1rmev.css">
+    <link rel="stylesheet" href="../static/css/animate.css">
+    <link rel="stylesheet" href="../static/css/xwzx.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/com(2).css">
+</head>
+<style>
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .beijing {
+        padding: 0 100px;
+        box-sizing: border-box;
+    }
+    
+    .wenben {
+        width: 100%;
+        padding-bottom: 100px;
+    }
+    
+    .wenben-1 {
+        width: 100%;
+        clear: both;
+    }
+    
+    .xiuche {
+        font-size: 32px;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    @media screen and (max-width:768px) {
+        .xiuche {
+            transition: 1s;
+            font-size: 20px;
+        }
+        .beijing {
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        .dianji>.right {
+            display: block;
+            float: left;
+        }
+    }
+    
+    .riqi {
+        /* background-color: rgb(159, 43, 226); */
+        margin-bottom: 65px;
+        font-size: 14px;
+        color: #000000;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .qiche {
+        /* width: 964px; */
+        /* background-color: rgb(214, 226, 43); */
+        font-size: 14px;
+        margin-bottom: 36px;
+        line-height: 30px;
+    }
+    
+    .baochi {
+        /* width: 964px; */
+        /* background-color: rgb(43, 226, 150); */
+        font-size: 14px;
+        margin-bottom: 36px;
+        line-height: 30px;
+    }
+    
+    .dianji {
+        /* width: 964px; */
+        height: 32px;
+        /* background-color: blue; */
+        margin: 45px 0;
+    }
+    
+    .dianji>.left>a {
+        color: red;
+    }
+    
+    .dianji>.right>a {
+        color: red;
+    }
+    
+    .left {
+        /* width: 482px; */
+        height: 32px;
+        /* background-color: blueviolet; */
+        float: left;
+        font-size: 14px;
+        line-height: 32px;
+    }
+    
+    .right {
+        /* width: 482px; */
+        height: 32px;
+        /* background-color: blueviolet; */
+        float: right;
+        font-size: 14px;
+        line-height: 32px;
+        text-align: right;
+    }
+    
+    .return {
+        width: 138px;
+        height: 62px;
+        background-color: white;
+        margin: 88px auto 0;
+        font-size: 24px;
+        color: #070202;
+        line-height: 62px;
+        text-align: center;
+        border: solid 1px #2A2A2A;
+        /* padding: 13px 19px; */
+    }
+    
+    .return:hover {
+        background-color: #2A2A2A;
+    }
+    
+    .return a {
+        color: #0f0000;
+        /* text-decoration: none; */
+        /* transition: 0.5s; */
+    }
+    
+    .return a:hover {
+        color: white;
+    }
+    
+    .return a:link {
+        text-decoration: none;
+    }
+    
+    .dianji a:link {
+        text-decoration: none;
+    }
+</style>
+
+<body>
+
+
+    <!-- 背景 -->
+    <div class="container">
+        <div class="row">
+            <div class="beijing">
+                <div class="beijing-2">
+                    <!-- 图片 -->
+                    <div class="tupian">
+                        <img src="../static/img/news/banner.jpg" alt="src">
+                    </div>
+                    <!-- 养护知识开始 -->
+                    <div class="fg col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class=" fg-left "></div>
+                        <div class="flow  ">
+                            <div class="top ">浪漫花语</div>
+                            <div class="down">Knowledgement</div>
+                        </div>
+                        <div class=" fg-right "></div>
+                    </div>
+                    <!-- 养护知识结束 -->
+                    <!-- 内容开始 -->
+                    <div class="wenben col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="wenben-1">
+                            <div class="xiuche"><?php echo $new3['nname'];?></div>
+                            <div class="riqi">发布日期：<?php echo $new3['ntext'];?></div>
+                            <div class="qiche">
+                                <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<?php echo $new3['ndata'];?></span>
+                            </div>
+
+                            <div class="dianji">
+                                <div class="left">上一篇：<?php echo  $prevstr; ?></div>
+                               <div class="right">下一篇：<?php echo  $prevstrl; ?></div>
+                            </div>
+                            <!-- 返回按钮 -->
+                            <a href="category.php?id=35"><div class="return">返回列表</div></a>
+                            <!-- 返回按钮结束 -->
+                </div>
+            </div>
+            <div class="kong">
+
+            </div>
+            <div class="tupian-2">
+                <div class="tpbj">
+                    <img src="../static/img/news/banner1.jpg" alt="src">
+                </div>
+            </div>
+            <!-- 内容结束 -->
+
+            <!-- 背景结束 -->
+        </div>
+    </div>
+</div>
+</div>
+ <!-- 、、、、、、、、、、、、、、、底部、、、、、、、、、、、、、 -->
+ <div class="content" style="height: 300px;"></div>
+ <!-- 底部开始 -->
+
+</body>
+
+
+
+</html>
+<script src="../static/js/com.js"></script>

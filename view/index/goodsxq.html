@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>产品子页面</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1351160_ne6jrxlcrwa.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1351160_n13lb1rmev.css">
+    <link rel="stylesheet" href="../static/css/animate.css">
+    <link rel="stylesheet" href="../static/css/product.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/com(2).css">
+</head>
+
+<body>
+
+
+    <!-- 头部结束 -->
+
+    <!-- 广告图开始 -->
+    <section>
+        
+        <div ><img src="<?php echo $goods['thumb']; ?>" alt="" style="width: 100%" height="100px"></div>
+    </section>
+    <!-- 广告图结束 -->
+    <!-- 主体内容开始 -->
+    <div class="container">
+        <div class="row">
+            <div class="xiangqing">
+                <div class="title">
+                    <h1><?php echo $goods['gname']; ?></h1>
+                </div>
+                <div class="zhanshi">
+                    <div class="banner-container">
+                        <div class="banner">
+                            <ul>
+                                <?php $arrr=explode(',',$goods['banner']);
+                                 foreach ($arrr as $key=>$val){ ?>
+                                <li class="img">
+                                    <img src="<?php echo $val; ?>" alt="">
+                                </li>
+                                <?php  } ?>
+
+
+                            </ul>
+                            <div class="btn left"></div>
+                            <div class="btn right"></div>
+                            <div class="banner-dot">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="money">
+                        <div class="MarketPrice">
+                            <span>市场价：<?php echo $goods['mprice']; ?></span>
+                        </div>
+                        <div class="RetailPrice">
+                            <span>零售价：</span>
+                            <span>
+                                <strong>￥<?php echo $goods['sale']; ?></strong>
+                            </span>
+                        </div>
+                        <hr>
+                        <div class="stock">
+                            <span>库存状况：<?php echo $goods['stock']; ?></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="jieshao" class="col-sm-12 col-xs-12">
+                    <div class="shop-title">
+                        <span>商品介绍</span>
+                    </div>
+                    <div class="shop-xiangqing">
+                        <p>材 料： FlowerSong永生花系列：厄瓜多尔进口蓝色永生玫瑰（直径6-7cm）1枝，进口紫色永生玫瑰（直径5-6cm)1枝，
+                            <br>蓝紫色棒棒糖1枝，搭配蓝色、香芋紫色绣球，点缀蓝紫色橡栗果、小满天星<br> 包 装： 透明玻璃罩
+                            <br> 备 注： 化作诗化作笔化作灯写着你，爱一次梦一场思念最遥遥无期！
+                            <br> 附 送： 下单填写留言，即免费赠送精美贺卡！
+                            <br> 配 送： 顺丰快递深圳发货, 全国可达, 包邮!</p>
+                    </div>
+                    <div class="shop-xiangqing2">
+                        <p>设计师物语<br> 恋心，这个词从一个海外论坛看到，特别喜欢。正如字面
+                            <br> 意思一样，恋心，就是发自内心的真心喜欢与依恋。蓝色
+                            <br> 永生玫瑰,代表我独风情与你,为你沉默，为你沉淀。那蓝，
+                            <br> 那紫，如此的妖艳和神秘，不喜欢的觉得过于艳丽，爱她
+                            <br> 的怎不会被她神秘的妖气迷住呢?
+                            <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体内容结束 -->
+
+    <!-- 底部开始 -->
+<div class="container">
+    <div class="row">
+        <div style="float: left">
+            上一篇:<?php echo  $prevstr; ?>
+
+        </div>
+        <div style="float: right">
+            下一篇:<?php echo  $prevstrl; ?>
+
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
+<script src="../static/js/product.js"></script>

@@ -1,0 +1,238 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .about-box {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+        
+        .about-box img {
+            margin-top: 20px;
+            width: 100%;
+            height: 100%;
+        }
+        /* banner结束 */
+        /* 关于我们开始 */
+        
+        .about-wz {
+            height: 126px;
+            margin: 0 auto;
+            clear: both;
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+        }
+        
+        .about-wzk {
+            font-size: 32px;
+            line-height: 126px;
+            text-align: center;
+        }
+        
+        .about-wz-left {
+            height: 126px;
+            padding: 0;
+        }
+        
+        .about-wz-right {
+            height: 126px;
+            padding: 0;
+        }
+        
+        .about-gywm {
+            height: 126px;
+            padding: 0;
+            font-size: 32px;
+            color: #333333;
+            line-height: 90px;
+            text-align: center;
+        }
+        
+        .about-xt {
+            height: 2px;
+            margin-top: 55px;
+            background: #333333;
+        }
+        
+        .about-gywm-wz {
+            clear: both;
+            height: 60px;
+            font-size: 32px;
+            color: #333333;
+        }
+        
+        .about-gywm-Ab {
+            clear: both;
+            height: 60px;
+        }
+        
+        .about-gywm-Ab {
+            font-size: 14px;
+            color: #a5a5a5;
+            line-height: 30px;
+        }
+        
+        br {
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            color: #a5a5a5;
+            display: block;
+            padding: 2px;
+        }
+        /* 关于我们结束 */
+        /* 关于我们文字开始 */
+        
+        .about-left {
+            clear: both;
+            margin: 20px 0 0 0;
+            height: 306px;
+            /* display: flex;
+            justify-content: center; */
+        }
+        
+        .about-left-l {
+            height: 100%;
+            /* width: 100%; */
+        }
+        
+        .about-left-l-top {
+            height: 109px;
+            color: #3e3e3e;
+            font-size: 14px;
+            line-height: 25px;
+        }
+        
+        .about-left-l-kb {
+            height: 24px;
+            margin-bottom: 7px;
+            clear: both;
+        }
+        /* 关于我们文字结束 */
+        /* <!-- 关于我们图片开始 --> */
+        
+        .about-left-r {
+            height: 100%;
+        }
+        
+        .about-left-r img {
+            width: 100%;
+            height: 100%;
+        }
+        /* 关于我们图片结束 */
+        /* 维修师傅开始 */
+        
+        .about-wxsf {
+            padding: 0;
+            margin: 30px 0 0 0;
+            height: 100%;
+        }
+        
+        .about-wxsf-left {
+            padding: 0;
+        }
+        
+        .about-wxsf-fist {
+            width: 196px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            padding-left: 0;
+        }
+        
+        .about-wxsf-left {
+            height: 100%;
+        }
+        
+        .about-wxsf-fist img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .about-wxsf-top {
+            height: 68px;
+            padding: 0;
+            text-align: center;
+        }
+        
+        .about-wxsf-top span {
+            font-size: 26px;
+            font-family: "微软雅黑";
+            font-weight: 700;
+        }
+        
+        .about-wxsf-top p {
+            font-size: 14px;
+            color: red;
+            font-family: "微软雅黑"
+        }
+        /* 维修师傅结束 */
+        /* .about-wxsf-fist img {
+            padding-left: 40%;
+        /* }
+         */
+        
+        @media (max-width:1200px) {
+            .about-left-r {
+                margin: 0 auto;
+                display: block;
+            }
+        }
+        
+        @media (min-width:768px) {
+            .about-gywm {
+                font-size: 20px;
+            }
+            .about-left-r {
+                margin: 0 auto;
+                display: block;
+            }
+            .about-wxsf-fist {
+                margin-left: 40%;
+            }
+            .about-gywm-wz {
+                font-size: 30px;
+            }
+        }
+        
+        @media (max-width:768px) {
+            .about-wxsf-fist {
+                margin: 0 auto;
+                display: block;
+            }
+            .about-gywm {
+                font-size: 20px;
+            }
+            .about-gywm-wz {
+                font-size: 20px;
+            }
+            .about-gywm {
+                font-size: 20px;
+            }
+        }
+        /* @media (max-width:1000px) {
+            .about-wxsf-fist {
+                margin-left: 35%;
+            }
+            .about-gywm {
+                font-size: 20px;
+            }
+        } */
+        
+        @media (min-width:1200px) {
+            /* .about-left-r {
+                padding-left: 0;
+            } */
+            .about-wxsf-fist {
+                margin: 0 auto;
+                display: block;
+            }
+            .about-lift-r {
+                margin: 0 auto;
+                display: block;
+            }
+        }

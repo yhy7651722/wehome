@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        input{
+            background:none;
+            outline:none;
+            border:none;
+        }
+    </style>
+</head>
+<body>
+<ol class="breadcrumb">
+
+    <li>首页</li>
+    <li class="active" style="color: #337ab7;">新闻查看</li>
+
+</ol>
+
+<table class="table table-striped  <?php   echo count($res)?'':'hidden';  ?> ">
+    <thead>
+    <tr>
+        <th>新闻题目</th>
+        <th>新闻内容</th>
+        <th>新闻时间</th>
+
+        <th>操作</th>
+
+    </tr>
+    </thead>
+    <tbody>
+
+
+    <?php
+    foreach($res as $key=>$value){
+
+    ?>
+
+    <tr id="<?php echo $value['id']; ?>">
+        <td><input type="text" name="nname" data-values="<?php echo $value['nname']; ?>"
+                   value="<?php echo $value['nname']; ?>"></td>
+
+        <td><input type="text" name="ndata" data-values="<?php echo $value['ndata']; ?>"
+                   value="<?php echo $value['ndata']; ?>"></td>
+        <td><input type="date" name="ntext" data-values="<?php echo $value['ntext']; ?>"
+                   value="<?php echo $value['ntext']; ?>"></td>
+
+
+        <td>
+            <button class="btn">删除</button>
+        </td>
+    </tr>
+
+
+
+    <?php }
+    ?>
+    </tbody>
+
+</table>
+
+<script>
+
+
+    $('tbody').on('click','.btn',function () {
+            let id=$(this).closest('tr').attr('id');
+            $.ajax({
+                type: "POST",
+                url: "newdelete.php",
+                data: {id: id},
+                // data:$(this).serialize(),
+                dataType: "json",
+
+                success: function (res) {
+                    if (res.coid=200) {
+                        // this.remove();
+                        $('#'+id).remove();
+                    } else {
+                        console.log(res.msg);
+                    }
+                }
+            });
+        }
+    );
+    $('tbody').on('blur', 'input', function () {
+        let value = this.value.trim();
+        let type = this.name;
+        let id = $(this).closest('tr').attr('id');
+        let oldvalue = this.dataset.values;
+        value.length && oldvalue != value && $.ajax({
+            url: 'newupload.php',
+            type: 'POST',
+            dataType: 'json',
+            context: this,
+            data: {value, type, id},
+            success: function (res) {
+                if (res.code === 200) {
+                    alert(res.msg);
+                } else {
+                    this.value = oldvalue;
+                    alert(res.msg);
+                }
+            }
+        });
+        value.length || (this.value = oldvalue);
+    })
+
+</script>
+
+</body>

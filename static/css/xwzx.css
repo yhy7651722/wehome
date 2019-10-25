@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.beijing {
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+.beijing-2 {
+    /* width: 1024px; */
+    /* background-color: rgb(143, 9, 253); */
+    margin: 0 auto;
+}
+
+.tupian {
+    width: 100%;
+    height: 100%;
+    display: block;
+    /* background-color: aquamarine; */
+    margin: 30px auto 0;
+}
+
+.tupian img {
+    width: 100%;
+    /* height: 204.79px; */
+}
+
+.neirong {
+    height: 245px;
+    /* background-color: aquamarine; */
+}
+
+.kuai {
+    height: 225px;
+    /* background-color: rgb(141, 139, 248); */
+    margin: auto;
+    transform: translateY(20px);
+    padding: 0 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.kuai-2 {
+    height: 37.5px;
+    /* background-color: rgb(237, 248, 139); */
+    border-bottom: 1px dotted #c6c6c6;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.lianjie {
+    height: 14px;
+    width: 100%;
+    /* background-color: rgb(214, 139, 248); */
+    transform: translateY(11.75px);
+    margin: auto;
+    font-size: 13px;
+    color: #0f0000;
+    float: left;
+    line-height: 14px;
+}
+
+.lianjie a {
+    color: #0f0000;
+    /* text-decoration: none; */
+    /* transition: 0.5s; */
+}
+
+.lianjie a:hover {
+    color: #f0443a;
+}
+
+.lianjie a:link {
+    text-decoration: none;
+}
+
+.hou {
+    width: 66px;
+    height: 14px;
+    /* background-color: aquamarine; */
+    float: right;
+    font-size: 12px;
+    line-height: 14px;
+    color: #D6D6D6;
+}
+
+
+/* .kuai-2>.lianjie>a {
+    color: #D6D6D6;
+}
+
+.kuai-2>.hou>a {
+    color: #D6D6D6;
+} */
+
+.kongwei {
+    height: 52px;
+    margin-top: 50px;
+    /* background-color: rgb(4, 118, 248); */
+}
+
+.tupian-2 {
+    height: 214.79px;
+    /* background-color: rgb(248, 244, 4); */
+}
+
+.tpbj {
+    width: 100%;
+    height: 100%;
+    display: block;
+    /* background-color: rgb(226, 137, 21); */
+}
+
+.tpbj img {
+    width: 100%;
+}
+
+@media (max-width: 750px) {
+    .tupian {
+        display: block;
+    }
+    .kuai-2>.lianjie>a {
+        color: red;
+    }
+    .kuai-2>.hou>a {
+        color: red;
+    }
+}
+
+.flow {
+    height: 125px;
+    /* font-family: 微软雅黑;
+       font-size: 28px;
+       color: #333333;
+       margin: 0 auto; */
+    margin: 0 auto;
+    float: left;
+    text-align: center;
+}
+
+.fg-left {
+    height: 62px;
+    width: calc(50% - 90px);
+    border-bottom: solid 1px #d6d6d6;
+    text-align: center;
+    line-height: 125px;
+    float: left;
+}
+
+.fg-right {
+    height: 62px;
+    width: calc(50% - 90px);
+    float: right;
+    border-bottom: solid 1px #d6d6d6;
+    float: left;
+}
+
+p {
+    height: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* .z1 {
+       font-family: 微软雅黑;
+       font-size: 26px;
+       color: #333333;
+       margin-top: -20px;
+       text-align: center;
+   } */
+
+.down {
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    font-size: 14px;
+    color: #a5a5a5;
+}
+
+.top {
+    height: 36px;
+    width: 100%;
+    line-height: 36px;
+    font-family: 微软雅黑;
+    font-size: 32px;
+    color: #333333;
+    margin-top: 30px;
+    width: 180px;
+}
+
+@media screen and (max-width:768px) {
+    .top {
+        transition: 1s;
+        font-size: 20px;
+    }
+    .down {
+        transition: 1s;
+        font-size: 20px;
+    }
+}
+
+.bq {
+    margin-left: -15px;
+}
+
+.item {
+    float: left;
+    margin-left: 10px;
+    font-family: 微软雅黑;
+    font-size: 16px;
+    color: red;
+    cursor: pointer;
+}

@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 头部的黑色边框开始 */
+
+
+/* .wrap {
+    width: 100%;
+    height: 30px;
+    background-color: black;
+} */
+
+
+/* 头部的黑色边框结束 */
+
+
+/* 大图片的开始 */
+
+.picture1 {
+    /* position: relative;
+    top: 0;
+    right: 0;
+    left: 0; */
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.picture1 img {
+    width: 100%;
+}
+
+@media screen and (min-width:1200px) {
+    .picture1 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768) and (max-width:970px) {
+    .picture1 {
+        /* width: 100%; */
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .picture1 {
+        padding: 0;
+    }
+}
+
+
+/* 大图片的结束 */
+
+
+/* 标题的开始 */
+
+.big-box {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.tittle-left {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.tittle {
+    padding: 0;
+    width: 350px;
+}
+
+.tiittle-cn {
+    display: block;
+    font-size: 32px;
+    color: #333333;
+    text-align: center;
+}
+
+.tittle-en {
+    display: block;
+    font-size: 14px;
+    color: #a5a5a5;
+    text-align: center;
+}
+
+.tittle-right {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+@media screen and (min-width:768) and (max-width:970px) {
+    .tittle-en {
+        font-size: 32px;
+    }
+    .tiittle-cn {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .tittle-en {
+        font-size: 24px;
+    }
+    .tiittle-cn {
+        font-size: 20px;
+    }
+}
+
+
+/* 标题的结束 */
+
+
+/* 主体部分的开始 */
+
+.subject {
+    margin-top: 30px;
+}
+
+.frame {
+    /* width: 25%; */
+    float: left;
+    animation-duration: 1s;
+}
+
+.frame:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.frame:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.frame:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.frame:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.frame>img {
+    width: 100%;
+    padding: 6px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    box-shadow: 2px 2px 2px #a5a5a5;
+}
+
+@media screen and (max-width:992px) {
+    .frame {
+        margin: 0 auto;
+        clear: both;
+        text-align: center;
+    }
+    .frame>img {
+        width: 250px;
+        height: 150px;
+        margin: 0 auto;
+        display: block;
+        clear: both;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .frame {
+        margin: 0 auto;
+        clear: both;
+    }
+    .img {
+        margin: 0 auto;
+    }
+}
+
+.wenzi {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.wenzi>a {
+    color: #F0443A;
+    text-decoration: none;
+}
+
+.henghang {
+    text-align: center;
+}
+
+.word {
+    font-size: 14px;
+    color: #808080;
+    margin-bottom: 15px;
+}
+
+
+/* 主体部分的结束 */
+
+
+/* 底部部分的开始 */
+
+
+/* 底部部分的结束 */

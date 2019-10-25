@@ -1,0 +1,529 @@
+    body,
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+    
+    nav {
+        width: 100%;
+        /* height: 90px; */
+        box-sizing: border-box;
+        z-index: 999;
+        background: #fddade none repeat center top;
+        border-bottom: 1px solid #fddade;
+    }
+    
+    .block {
+        display: none;
+        width: 100%;
+        background-color: #f0443a;
+        padding: 14px 0;
+        padding-left: 20px;
+        color: #fff;
+        font-size: 14px;
+    }
+    
+    .block>.ic {
+        float: right;
+        padding-left: 20px;
+        margin: 0 10px;
+    }
+    
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* header结束 */
+    /* 轮播图开始 */
+    
+    .banner-img {
+        width: 100%;
+    }
+    
+    .banner {
+        z-index: 40;
+        position: relative;
+        width: 100%;
+        height: 722px;
+        overflow: hidden;
+    }
+    /* 图片 */
+    
+    .img-box>.img {
+        /* position: absolute;
+        left: 0;
+        top: 0; */
+        width: 500%;
+        height: 100%;
+        height: 722px;
+        margin: 0;
+        overflow: hidden;
+    }
+    
+    .swiper-containe {
+        width: 100%;
+        height: 722px;
+    }
+    
+    .banner-img {
+        float: left;
+        width: 33.333333%;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+    }
+    
+    .btn {
+        position: absolute;
+        top: calc(45% - 20px);
+        height: 40px;
+        width: 40px;
+        /* background-color: #ff6000; */
+        border-radius: 0;
+    }
+    
+    .swiper-button-prev {
+        padding: 0;
+        background-image: url(../img/index/banner-l.png);
+        background-size: cover;
+        background-position: top left;
+    }
+    
+    .swiper-button-prev:hover {
+        background-image: url(../img/index/banner-l.png);
+        background-position: bottom left;
+        background-size: cover;
+        transition: all ease-out .3s;
+    }
+    
+    .swiper-button-next {
+        right: 0;
+        background-image: url(../img/index/banner-r.png);
+        background-size: cover;
+        background-position: top left;
+    }
+    
+    .swiper-button-next:hover {
+        background-image: url(../img/index/banner-r.png);
+        background-position: bottom left;
+        background-size: cover;
+        transition: all ease-out .3s;
+    }
+    
+    .swiper-pagination {
+        position: absolute;
+        left: calc(50% - 61px);
+        bottom: 20px;
+        width: 122px;
+        height: 6px;
+    }
+    
+    .swiper-pagination-bullet {
+        width: 44px;
+        height: 6px;
+        background-color: white;
+        float: left;
+        margin: 0 7px;
+        border-radius: 0;
+    }
+    
+    .swiper-pagination-bullet-active {
+        background-color: #fca1ab;
+    }
+    /* 轮播图结束 */
+    /* 内容部分开始 */
+    
+    .all {
+        /* max-width: 1024px; */
+        margin-top: 8px;
+    }
+    /* 小标题部分开始 */
+    
+    .font-text {
+        width: 100%;
+        padding: 0 40px;
+        margin: 0 auto;
+        /* background-color: green; */
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    .text-title {
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    .text-p {
+        font-size: 16px;
+        text-align: center;
+    }
+    /* 小标题部分结束 */
+    /* 四小部分开始 */
+    
+    .tuijian {
+        width: 100%;
+        height: 340px;
+        padding: 40px 40px 1px;
+    }
+    
+    .tj-itme {
+        padding: 0 5px;
+        width: 25%;
+        /* background-color: blue; */
+        float: left;
+        opacity: 0;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+    }
+    
+    .tj-itme:nth-child(1) {
+        animation-delay: 0.1s;
+        opacity: 1;
+    }
+    
+    .tj-itme:nth-child(2) {
+        animation-delay: 0.2s;
+        opacity: 1;
+    }
+    
+    .tj-itme:nth-child(3) {
+        animation-delay: 0.3s;
+        opacity: 1;
+    }
+    
+    .tj-itme:nth-child(4) {
+        animation-delay: 0.4s;
+        opacity: 1;
+    }
+    
+    .img {
+        width: 60%;
+        margin: 10px auto 0;
+    }
+    
+    .img>img {
+        width: 100%;
+    }
+    
+    .title {
+        font-family: "宋体";
+        font-weight: 700;
+        text-align: center;
+        color: #ff6000;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    
+    .title-fg {
+        width: 182px;
+        margin: 0 auto;
+    }
+    
+    .font-p {
+        color: #808080;
+        font-size: 14px;
+        line-height: 1.5em;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    /* 四小部分结束 */
+    /* 引领时代部分开始 */
+    
+    .yinl {
+        width: 100%;
+        clear: both;
+        margin-top: 50px;
+        padding: 20px 0 0;
+    }
+    
+    .yinl-title {
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    .yinl-img {
+        width: 100%;
+        margin: 20px auto;
+    }
+    
+    .yinl-img>img {
+        width: 100%;
+    }
+    /* 引领时代部分结束 */
+    /* 公司简介部分开始 */
+    
+    .gsjj {
+        width: 100%;
+        /* height: 250px; */
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 40px;
+        padding-bottom: 0px;
+        margin-top: 0;
+        clear: both;
+    }
+    
+    .gsjj-img {
+        padding: 0 5px;
+        margin: 0 auto;
+        animation-duration: 1s;
+    }
+    
+    .gsjj-img>img {
+        width: 100%;
+    }
+    
+    .gsjj-right {
+        padding: 0 5px;
+        padding-left: 35px;
+    }
+    
+    .gsjj-title {
+        padding: 0;
+        font-family: 微软雅黑;
+        font-size: 18px;
+        color: #ff6000;
+        border-bottom: 1px solid #efefef;
+        padding-bottom: 5px;
+    }
+    
+    .gsjj-title>.more {
+        float: right;
+        padding: 5px;
+        font-size: 12px;
+    }
+    
+    .gsjj-p {
+        font-family: 微软雅黑;
+        color: #808080;
+        font-size: 14px;
+        line-height: 1.5em;
+        margin-top: 10px;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 0;
+        padding-left: 0;
+        border-radius: 0px;
+    }
+    
+    .gsjj-p>.gsjj-p2 {
+        padding-top: 24px;
+    }
+    /* 公司简介部分结束 */
+    /* 美容知识开始 */
+    
+    .mrzs {
+        clear: both;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        margin-top: 40px;
+    }
+    
+    .mrzs-img {
+        padding: 0 5px;
+        animation-duration: 1s;
+    }
+    
+    .mrzs-img>img {
+        width: 100%;
+    }
+    
+    .mrzs-left {
+        padding: 0 5px;
+        padding-right: 35px;
+        margin-bottom: 40px;
+    }
+    
+    .mrzs-title {
+        padding: 0;
+        font-family: 微软雅黑;
+        font-size: 18px;
+        color: #ff6000;
+        border-bottom: 1px solid #efefef;
+        padding-bottom: 5px;
+    }
+    
+    .more>a {
+        color: #ff6000;
+    }
+    
+    .mrzs-title>.more {
+        float: right;
+        padding: 5px;
+        font-size: 12px;
+    }
+    
+    .mrzs-ul {
+        color: #808080;
+        margin-top: 10px;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    .mrzs-ul a {
+        color: #808080;
+    }
+    
+    .mrzs-li:hover {
+        color: #ff0000;
+    }
+    
+    .mrzs-li:hover span {
+        color: #ff0000;
+    }
+    
+    .mrzs-li {
+        max-width: 99.8%;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        border-bottom: 1px dotted #c1c1c1;
+    }
+    
+    .m {
+        border: none;
+    }
+    
+    .mrzs-li>span {
+        float: right;
+        color: #c9c9c9;
+        line-height: 14px;
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    
+    .mrzs-img {
+        margin-bottom: 40px;
+    }
+    /* 美容知识结束 */
+    
+    @media screen and (max-width: 992px) {
+        .block {
+            display: block;
+        }
+        .block1 {
+            display: block;
+        }
+        .font-text {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 25px;
+            padding-bottom: 18px;
+            margin-top: 0;
+        }
+        .tuijian {
+            padding: 0;
+        }
+        .tj-itme {
+            width: 100%;
+            margin-top: 10px;
+        }
+        .img {
+            width: 128px;
+            margin: 10px auto 0;
+        }
+        .title-fg {
+            width: 182px;
+            margin: 0 auto;
+        }
+        .yinl {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 75px;
+            padding-bottom: 0;
+            margin-top: 0;
+        }
+        .gsjj {
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 40px;
+            padding-bottom: 0;
+            margin-top: 0;
+        }
+        .gsjj-right {
+            padding: 0;
+        }
+        .gsjj-img {
+            margin: 0 auto;
+        }
+        .mrzs {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 20px;
+            padding-bottom: 0;
+            margin-top: 0;
+            min-height: 274px;
+        }
+        .mrzs-left {
+            padding: 0 5px;
+            padding-right: 5px;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .text-title {
+            font-size: 24px;
+        }
+        .text-p {
+            font-size: 14px;
+        }
+        .tuijian {
+            padding: 0 10px;
+        }
+        .tj-itme {
+            width: 100%;
+        }
+        .img {
+            width: 128px;
+            margin: 10px auto 0;
+        }
+        .title-fg {
+            width: 182px;
+            margin: 0 auto;
+        }
+        .font-p {
+            font-size: 13px;
+            text-align: center;
+        }
+        .yinl-title {
+            font-size: 26px;
+        }
+        .gsjj-img {
+            /* height: 400px; */
+            margin: 0 auto;
+        }
+        .gsjj-title {
+            font-size: 14px;
+        }
+        .mrzs-title {
+            font-size: 14px;
+            margin: 0 0 20px 0;
+        }
+        .mrzs-li {
+            margin: 0 0 20px 0;
+        }
+    }
+    /* 内容部分结束 */

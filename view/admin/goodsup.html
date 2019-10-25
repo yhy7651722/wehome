@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        .box{
+            width: 50px;
+            height: 50px;
+        }
+        .bog{
+
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<ol class="breadcrumb">
+
+    <li>首页</li>
+    <li class="active" style="color: #337ab7;">商品编辑</li>
+
+</ol>
+
+<form>
+    <div class="form-group">
+        <label for="exampleInputEmail14">商品分类</label>
+        <select class="form-control" name="cid">
+            <?php  require '../lib/db.php';
+                        $sql="select * from category";
+                        $da=$mysql->query($sql)->fetch_all(MYSQLI_ASSOC);
+            foreach($da as $key){
+            if($key['id']===$res['cid']){
+            ?>
+            <option value="<?php echo $res['cid']; ?>"<?php echo $key['id']==$res['cid']? "selected":""?>><?php echo $key['cname']?></option>
+            <?php
+                    }else{
+                ?>
+            <option value="<?php echo $key['id']; ?>"><?php echo $key['cname']; ?></option>
+            <?php
+                    }
+                } ?>
+            <select>
+
+            <!--<select id="exampleInputEmail145 " name="cid" class="form-control">-->
+
+            <!--<option value="<?php echo $res['cid'];   ?>"><?php echo $res['cname'];   ?></option>-->
+
+
+        <!--</select>-->
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">商品名字</label>
+        <input type="text" name="gname" value="<?php echo $res['gname']; ?>" class="form-control" id="exampleInputEmail14" placeholder="商品名字">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">市场价</label>
+        <input type="number" name="mprice" value="<?php echo $res['mprice']; ?>" class="form-control" id="exampleInputEmail13" placeholder="市场价">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">零售价</label>
+        <input type="number" name="sale" value="<?php echo $res['sale']; ?>" class="form-control" id="exampleInputEmail12" placeholder="零售价">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">库存</label>
+        <input type="number" name="stock" value="<?php echo $res['stock']; ?>" class="form-control" id="exampleInputEmail1" placeholder="库存">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail12">商品详情</label>
+        <textarea  name="detail" class="form-control" rows="3"><?php echo $res['detail']; ?></textarea>
+    </div>
+
+    <div class="form-group">
+        <input type="hidden" name="thumb" value="<?php echo $res['thumb']?>">
+        <label for="exampleInputPassword3">商品缩略图 <span>比例:1:1 最佳尺寸200*200</span></label>
+        <input type="file" accept="image/*" class="form-control" id="exampleInputPassword5"
+               placeholder="上传商品缩略图">
+    </div>
+    <div class="form-group">
+
+        <label for="exampleInputPassword3" style="visibility: hidden">缩略图</label>
+        <img  style="width:100%" name="thumb" src="<?php echo $res['thumb']; ?>">
+    </div>
+    <div class="form-group">
+        <input type="hidden" name="banner" value="<?php echo $res['banner']?>">
+        <label for="exampleInputPassword3">商品轮播图</label>
+        <input type="file" multiple class="form-control" id="exampleInputPassword6"
+               placeholder="上传商品轮播图">
+    </div>
+    <div class="form-group" id="banner" style="width: 200px">
+        <?php foreach(explode(',',$res['banner']) as $key=>$val){ ?>
+        <div class="multipleboxes" ><img  style="width:100%" name="banner" src="<?php echo $val; ?>"></div>
+        <?php } ?>
+    </div>
+    <input type="hidden" name="gid" value="<?php echo $res['gid']?>">
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+</body>
+</html>
+<script>
+
+    $('form').on('submit',function (e) {
+        e.preventDefault();
+        let formdata=new FormData(this);
+        $.ajax({
+            type:'POST',
+            url:'goodsup.php',
+            data:formdata,
+            processData:false,
+            contentType:false,
+            dataType:'json',
+
+            success:function (res) {
+                if(res.code=200){
+                    alert(res.msg);
+
+                    $('img').remove();
+                }
+                else{
+                    alert(res.msg);
+                }
+            }
+
+        })
+
+    })
+
+</script>

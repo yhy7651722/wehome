@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 图片部分开始 */
+
+.photo-big {
+    margin-top: 138px;
+    width: 100%;
+}
+
+.picture {
+    padding: 0;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin-top: -120px;
+}
+
+.image>img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 图片部分结束 */
+
+
+/* 在线预约部分开始 */
+
+.main-tittle {
+    margin-top: 39px;
+}
+
+.main-tittle .left-line {
+    height: 30px;
+    border-bottom: solid 1px #d6d6d6;
+}
+
+.middle {
+    text-align: center;
+}
+
+.big .row .middle h1 {
+    line-height: 10px;
+    display: block;
+    font-family: 微软雅黑;
+    font-size: 32px;
+    font-weight: normal;
+    color: #333333;
+    display: block;
+}
+
+.middle p {
+    font-size: 14px;
+    font-weight: normal;
+    color: #a5a5a5;
+    padding: 2px;
+}
+
+.main-tittle .right-line {
+    height: 30px;
+    border-bottom: solid 1px #d6d6d6;
+}
+
+@media only screen and (max-width: 992px) {
+    .big .row .middle h1 {
+        font-size: 22px;
+    }
+    .big .row .middle p {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 726px) {
+    .big .row .middle h1 {
+        font-size: 18px;
+    }
+    .big .row .middle p {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 628px) {
+    .big .row .middle h1 {
+        font-size: 15px;
+    }
+    .big .row .middle p {
+        font-size: 5px;
+    }
+}
+
+@media only screen and (max-width: 556px) {
+    .big .row .middle h1 {
+        font-size: 12px;
+    }
+    .big .row .middle p {
+        font-size: 5px;
+    }
+}
+
+
+/* 在线预约部分结束 */
+
+
+/* 表格部分开始 */
+
+
+/* 预约服务部分框开始 */
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.box {
+    padding: 0 20px;
+    height: 387.75px;
+    box-sizing: border-box;
+}
+
+.middle-box {
+    padding: 0 5px;
+    box-sizing: border-box;
+    height: 450px;
+    /* background-color: green; */
+}
+
+.text {
+    float: left;
+    width: 100px;
+    height: 100%;
+}
+
+.text span {
+    line-height: 27px;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    user-select: none;
+}
+
+.a-line {
+    height: 27px;
+}
+
+.input-one {
+    height: 100%;
+    /* margin-top: -2px; */
+}
+
+.option-one {
+    margin-left: 20px;
+    height: 100%;
+    border-radius: 3px;
+}
+
+
+/* 预约服务部分框结束 */
+
+
+/* 预约日期部分开始 */
+
+.second {
+    margin-top: 20px;
+    height: 27px;
+}
+
+.text-two {
+    float: left;
+}
+
+.input-two {
+    height: 100%;
+    margin-top: -10px
+}
+
+.text-two span {
+    line-height: 27px;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    user-select: none;
+}
+
+.calendar {
+    height: 100%;
+    border-radius: 3px;
+    margin-left: 60px;
+    border: 1px solid #a5a5a5;
+}
+
+.prompt {
+    font-family: 微软雅黑;
+    font-size: 12px;
+    color: #fff;
+    width: 116px;
+    height: 24px;
+    background-color: #d64a49;
+    margin-left: 120px;
+    display: none;
+}
+
+
+/* 预约日期部分结束 */
+
+
+/* 您的姓名部分开始 */
+
+.name {
+    margin-top: 10px;
+    height: 27px;
+}
+
+.name-text {
+    float: left;
+}
+
+.name-text span {
+    line-height: 27px;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    user-select: none;
+}
+
+.input-three {
+    float: left;
+    height: 27px;
+}
+
+.content-name {
+    width: 280px;
+    height: 25px;
+    border-radius: 5px;
+    margin-left: 60px;
+    border: 1px solid #a5a5a5;
+}
+
+.prompt-two {
+    overflow: hidden;
+    font-family: 微软雅黑;
+    font-size: 12px;
+    color: #fff;
+    width: 116px;
+    height: 24px;
+    background-color: #d64a49;
+    margin-top: 20px;
+    margin-left: 120px;
+    overflow: hidden;
+    clear: both;
+    display: none;
+}
+
+
+/* 您的姓名部分结束 */
+
+
+/* 您的性别部分开始 */
+
+.cender {
+    margin-top: 10px;
+    height: 27px;
+}
+
+.cender-text {
+    float: left;
+}
+
+.cender-text span {
+    line-height: 27px;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    user-select: none;
+}
+
+#nv {
+    margin-left: 4px;
+}
+
+.input-four {
+    float: left;
+    margin-left: 60px;
+    margin-top: 5px;
+}
+
+.prompt-thee {
+    overflow: hidden;
+    font-family: 微软雅黑;
+    font-size: 12px;
+    color: #fff;
+    width: 116px;
+    height: 24px;
+    background-color: #d64a49;
+    margin-top: 20px;
+    margin-left: 120px;
+    overflow: hidden;
+    clear: both;
+    display: none;
+}
+
+
+/* 您的性别部分结束 */
+
+
+/* 您的电话部分开始 */
+
+.telephone {
+    margin-top: 10px;
+    height: 27px;
+}
+
+.telephone span {
+    line-height: 27px;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    user-select: none;
+}
+
+.telephone-text {
+    float: left;
+}
+
+.input-five {
+    float: left;
+    height: 27px;
+}
+
+.telephone-name {
+    width: 280px;
+    height: 25px;
+    border-radius: 5px;
+    margin-left: 60px;
+    border: 1px solid #a5a5a5;
+}
+
+.prompt-four {
+    overflow: hidden;
+    font-family: 微软雅黑;
+    font-size: 12px;
+    color: #fff;
+    width: 116px;
+    height: 24px;
+    background-color: #d64a49;
+    margin-left: 120px;
+    overflow: hidden;
+    clear: both;
+    display: none;
+}
+
+
+/* 您的电话部分结束 */
+
+
+/* 补充说明部分开始 */
+
+.supplement {
+    margin-top: 10px;
+    height: 27px;
+}
+
+.supplement-text {
+    float: left;
+}
+
+.supplement-name {
+    margin-top: 10px;
+    max-width: 300px;
+    width: 280px;
+    margin-left: 60px;
+    height: 60px;
+}
+
+.supplement-text span {
+    line-height: 27px;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    user-select: none;
+}
+
+.prompt-five {
+    overflow: hidden;
+    margin-top: 50px;
+    font-family: 微软雅黑;
+    font-size: 12px;
+    color: #fff;
+    width: 116px;
+    height: 24px;
+    background-color: #d64a49;
+    margin-left: 120px;
+    overflow: hidden;
+    clear: both;
+    display: none;
+}
+
+
+/* 补充说明部分结束 */
+
+
+/* 验证码部分开始 */
+
+.code {
+    margin-top: 50px;
+    height: 27px;
+}
+
+.code span {
+    line-height: 27px;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    user-select: none;
+}
+
+.code-text {
+    float: left;
+}
+
+.input-six {
+    height: 27px;
+}
+
+.code-name {
+    width: 280px;
+    margin-left: 73px;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid #a5a5a5;
+}
+
+.verification {
+    width: 115px;
+    height: 40px;
+    background-color: rgb(141, 144, 149);
+    margin-left: 120px;
+}
+
+.prompt-six {
+    overflow: hidden;
+    margin-top: 5px;
+    font-family: 微软雅黑;
+    font-size: 10px;
+    color: #fff;
+    width: 130px;
+    height: 24px;
+    background-color: #d64a49;
+    margin-left: 120px;
+    overflow: hidden;
+    clear: both;
+    display: none;
+}
+
+
+/* 验证码部分结束 */
+
+
+/* 提交预约部分开始 */
+
+.submit {
+    margin-top: 70px;
+    margin-left: 10px;
+    background-color: #333333;
+    width: 100px;
+    height: 25.6px;
+    text-align: center;
+}
+
+.submit:hover {
+    background-color: #ff6700;
+}
+
+.submit span {
+    font-size: 14px;
+    line-height: 25.6px;
+    color: #ffffff;
+}
